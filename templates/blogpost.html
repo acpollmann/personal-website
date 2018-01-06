@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../resources/mystyles.css"/>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="../resources/script.js"></script>
+    <meta name="google-signin-client_id" content="439141457813-tau69nqheqq7g26ro6ti7hoigrr83uiu.apps.googleusercontent.com">
+
+  </head>
+  <body>
+
+    <div id="content-container">
+      {{ content }}
+    </div>
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a href="#" onclick="signOut();">Sign out</a>
+<div id="commentBox" style="display:none">
+    <form method="post" action ="">
+      <label>Enter a comment:</label>
+      <input type="text" name="comment"/>
+      <input type="submit" value="Submit">
+    </form>
+</div>
+    <a href="/">Home</a>
+  </body>
+</html>
